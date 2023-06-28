@@ -1,0 +1,460 @@
+*{
+    font-family: 'Koulen', cursive;
+}
+
+body{
+    background-color: black;
+}
+
+.menu{
+    height: 15vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.links{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    transition: all .25s;
+}
+
+.nav-link:focus{
+    color: whitesmoke;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: whitesmoke;
+    border-bottom: 0.2rem solid rgb(211, 211, 12);
+}
+
+.logo:hover{
+    border: none;
+}
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient(black, rgba(0, 0, 0, 0.322)), url(../img/section3.jpg);
+    background-size: cover;
+    
+}
+
+.main{
+    height: 100%;
+}
+
+.mainInfo h1, .mainInfo p{
+    color: whitesmoke;
+}
+
+.mainInfo h1{
+    font-size: 6rem;
+    text-shadow: 0rem 0rem 1rem black;
+}
+
+.mainInfo h1 span{
+    color: rgb(211, 211, 12);
+}
+
+.mainInfo p{
+    font-size: 1.5rem;
+    color: rgb(172, 172, 172);
+    
+}
+
+.botonPedido{
+    min-width: 20rem;
+    height: 4rem;
+    color: whitesmoke;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: .15rem solid rgb(211, 211, 12);
+    background: rgba(0, 0, 0, 0.856);
+    letter-spacing: .25rem;
+    border-radius: .3rem;
+}
+      
+.botonPedido:hover {
+    background-color: rgba(0, 0, 0, 0.507);  
+    color: rgb(211, 211, 12);
+    border: .15rem solid whitesmoke;
+}
+
+footer{
+    background-color: black;
+}
+
+.footerPage{
+    color: rgba(211, 211, 12, 0.795);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+}
+
+.whatsapp1 h2 , .redes1 h3{
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whatsapp p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0   ;
+}
+
+.whatsapp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whatsapp1 i{
+    font-size: 1.7rem;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes1 i{
+    font-size: 1.5rem;
+}
+
+.iconosRedes{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.derechos{
+    grid-area: derechos;
+    justify-self: center;
+    text-underline-offset: black;
+    width: 100%;
+    text-align: center;
+}
+
+.derechos h4{
+    margin: 0;
+    color: rgba(107, 105, 105, 0.63);
+    font-size: 1.1rem;
+}
+
+
+/* html productos */
+
+.burgers{
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "classic stacker"
+                         "sweet classic2";
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.774)), url(../img/section13.jpg);
+    background-size: cover;
+    gap: 2rem;
+}
+
+.burgers h1{
+    grid-area: titulo;
+    text-align: center;
+    /* color: rgba(122, 29, 29, 0.801); */
+    color: rgba(211, 211, 12, 0.897) ;
+    margin: 1rem;
+}
+
+.burgers div{
+    margin: 1rem;
+    box-shadow: 0rem 0rem 0.3rem black ;
+    overflow: hidden;
+}
+
+.classic{
+    width: 25rem;
+    height: 30rem;
+    grid-area: classic;
+    justify-self: end;
+    color: whitesmoke;
+    border-radius:1rem 1rem 2rem 2rem;
+    background-color: black;
+    position: relative;
+}
+
+.iconMore{
+    position: absolute;
+    font-size: 5rem;
+    top: 10.5rem;
+    left: 10.5rem;
+    opacity: 0;
+    transition: all .7s ease;
+}
+
+
+
+.classic h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+
+.classic img{
+    width: 100%;
+    height: 90%;
+    border-radius: 0.5rem 0.5rem 2rem 2rem;
+    box-shadow: 0 0 .3rem black;
+}
+
+.stacker{
+    width: 25rem;
+    height: 30rem;
+    grid-area: stacker;
+    justify-self: start;
+    color: whitesmoke;
+    border-radius:1rem 1rem 2rem 2rem;
+    background-color: black;
+}
+
+.stacker h3{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+
+.stacker img{
+    width: 100%;
+    height: 90%;
+    border-radius: 0.5rem 0.5rem 2rem 2rem;
+    box-shadow: 0 0 .3rem black;
+}
+
+.sweet{
+    width: 25rem;
+    height: 30rem;
+    grid-area: sweet;
+    justify-self: end;
+    color: whitesmoke;
+    border-radius:1rem 1rem 2rem 2rem;
+    background-color: black;
+}
+
+.sweet h4{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+
+.sweet img{
+    width: 100%;
+    height: 90%;
+    border-radius: 0.5rem 0.5rem 2rem 2rem;
+    box-shadow: 0 0 .3rem black;
+}
+
+.crispyChicken{
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+    grid-area: classic2;
+    justify-self: start;
+    color: whitesmoke;
+    border-radius:1rem 1rem 2rem 2rem;
+    background-color: black;
+}
+
+.crispyChicken h5{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+
+.crispyChicken img{
+    width: 100%;
+    height: 90%;
+    border-radius: 0.5rem 0.5rem 2rem 2rem;
+    box-shadow: 0 0 .3rem black;
+}
+
+
+.sobreNosotros{
+    height: 100%;
+    background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0.336)), url(../img/section2.jpg);
+    background-size: cover;
+}
+
+.tituloNosotros{
+    width: 30%;
+    text-align: center;
+    margin: 2rem;
+    font-size: 10rem;
+    color:rgba(211, 211, 12, 0.897) ;
+}
+
+.parrafoNosotros{
+    width: 80%;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+.infoNosotros{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+
+    .links{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-link{
+        font-size: 1.1rem;
+    }
+
+    .mainInfo h1{
+        text-align: center;
+    }
+
+    .mainInfo p{
+        font-size: 1.2rem;
+    }
+
+    .footerPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    footer{
+        height: 100%;
+    }
+
+    .iconosRedes{
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    .redes1 h3{
+        font-size: 1.1rem;
+    }
+
+    .whatsapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp p{
+        font-size: 1.1rem;
+    }
+
+    .whatsapp1 h2{
+        font-size: 1.1rem;
+    }
+
+    .derechos h4{
+        margin: 0;
+    }
+
+    .burgers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burgers div{
+        width: 70%;
+        height: 50%;
+    }
+
+    .tituloNosotros{
+        text-align: center;
+        font-size: 5rem;
+        width: 100%;
+    }
+
+    .parrafoNosotros{
+        font-size: 1rem;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .burgers{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .burgers div{
+        width: 40%;
+        height: 20%;
+    }
+
+    .nav-link{
+        padding: 0;
+    }
+}
